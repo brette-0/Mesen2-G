@@ -190,6 +190,7 @@ enum class ControllerType
 	PowerPadSideB,
 	SuborMouse,
 	VirtualBoyController,
+	GcnController,
 
 	//NES/Famicon expansion devices
 	FourScore,

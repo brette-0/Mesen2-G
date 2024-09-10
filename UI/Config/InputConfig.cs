@@ -304,6 +304,7 @@ namespace Mesen.Config
 		PowerPadSideB,
 		SuborMouse,
 		VbController,
+		GcnController,
 
 		//NES/Famicon expansion devices
 		FourScore,

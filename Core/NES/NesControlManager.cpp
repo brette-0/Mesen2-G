@@ -38,6 +38,7 @@
 #include "NES/Input/AsciiTurboFile.h"
 #include "NES/Input/BattleBox.h"
 #include "NES/Input/VirtualBoyController.h"
+#include "NES/Input/GcnController.h"
 
 NesControlManager::NesControlManager(NesConsole* console) : BaseControlManager(console->GetEmulator(), CpuType::Nes)
 {
@@ -141,6 +142,8 @@ shared_ptr<BaseControlDevice> NesControlManager::CreateControllerDevice(Controll
 			break;
 		}
 
+		case ControllerType::GcnController: device.reset(new GcnController(_emu, type, port, keys)); break;
+		// indev
 		default: break;
 	}
 

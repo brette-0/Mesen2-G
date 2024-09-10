@@ -64,7 +64,7 @@ public:
 	NesConsole(Emulator* emulator);
 	~NesConsole();
 
-	static vector<string> GetSupportedExtensions() { return { ".nes", ".fds", ".unif", ".unf", ".nsf", ".nsfe", ".studybox" }; }
+	static vector<string> GetSupportedExtensions() { return { ".nes", ".fds", ".unif", ".unf", ".nsf", ".nsfe", ".studybox", ".gnes"}; }	// should Sour integrate this, gnes filetype seems redundant
 	static vector<string> GetSupportedSignatures() { return { "NES\x1a", "FDS\x1a", "\x1*NINTENDO-HVC*", "NESM\x1a", "NSFE", "UNIF", "STBX" }; }
 
 	NesCpu* GetCpu() { return _cpu.get(); }

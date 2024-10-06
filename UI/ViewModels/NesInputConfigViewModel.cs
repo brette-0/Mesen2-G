@@ -48,7 +48,8 @@ namespace Mesen.ViewModels
 			ControllerType.SnesController,
 			ControllerType.SnesMouse,
 			ControllerType.SuborMouse,
-			ControllerType.VbController
+			ControllerType.VbController,
+			ControllerType.GcnController
 		};
 
 		public Enum[] AvailableControllerTypesP2 => new Enum[] {
@@ -63,9 +64,10 @@ namespace Mesen.ViewModels
 			ControllerType.SnesController,
 			ControllerType.SnesMouse,
 			ControllerType.SuborMouse,
-			ControllerType.VbController
+			ControllerType.VbController,
+			ControllerType.GcnController,
 		};
-
+		// perhaps with later FW we can get 4p polling workaround
 		public Enum[] AvailableControllerTypesFourPlayer => new Enum[] {
 			ControllerType.None,
 			ControllerType.NesController,

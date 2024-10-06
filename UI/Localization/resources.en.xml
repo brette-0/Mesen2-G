@@ -1896,7 +1896,8 @@ E
 			<Value ID="SnesMouse">SNES Mouse</Value>
 			<Value ID="SuborMouse">Subor Mouse</Value>
 			<Value ID="VbController">Virtual Boy Controller</Value>
-
+			<Value ID="GcnController">Gamecube Controller</Value>		
+			
 			<Value ID="FourScore">Four Score (NES)</Value>
 			<Value ID="FamicomZapper">Zapper (Famicom)</Value>
 			<Value ID="TwoPlayerAdapter">2-Player Adapter (Famicom)</Value>

@@ -80,7 +80,7 @@ struct VideoConfig
 {
 	double CustomAspectRatio = 1.0;
 	VideoFilterType VideoFilter = VideoFilterType::None;
-	VideoAspectRatio AspectRatio = VideoAspectRatio::NoStretching;
+	VideoAspectRatio AspectRatio = VideoAspectRatio::Standard;
 	bool UseBilinearInterpolation = false;
 	bool UseSrgbTextureFormat = false;
 	bool VerticalSync = false;
@@ -593,7 +593,7 @@ struct NesConfig
 	bool AutoConfigureInput = true;
 
 	ConsoleRegion Region = ConsoleRegion::Auto;
-	bool EnableHdPacks = true;
+	bool EnableHdPacks = false;
 	bool DisableGameDatabase = false;
 	bool FdsAutoLoadDisk = true;
 	bool FdsFastForwardOnLoad = false;
@@ -620,17 +620,17 @@ struct NesConfig
 	bool DisableGameGenieBusConflicts = false;
 	bool DisableFlashSaves = false;
 
-	bool EnableOamDecay = false;
-	bool EnablePpuOamRowCorruption = false;
+	bool EnableOamDecay = true;
+	bool EnablePpuOamRowCorruption = true;
 	bool DisableOamAddrBug = false;
-	bool DisablePaletteRead = false;
-	bool DisablePpu2004Reads = false;
-	bool EnablePpu2000ScrollGlitch = false;
-	bool EnablePpu2006ScrollGlitch = false;
+	bool DisablePaletteRead = true;
+	bool DisablePpu2004Reads = true;
+	bool EnablePpu2000ScrollGlitch = true;
+	bool EnablePpu2006ScrollGlitch = true;
 	bool RestrictPpuAccessOnFirstFrame = false;
 
-	bool RandomizeMapperPowerOnState = false;
-	bool RandomizeCpuPpuAlignment = false;
+	bool RandomizeMapperPowerOnState = true;
+	bool RandomizeCpuPpuAlignment = true;
 	RamState RamPowerOnState = RamState::Random;
 
 	uint32_t PpuExtraScanlinesBeforeNmi = 0;
